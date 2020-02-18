@@ -1,0 +1,30 @@
+<script>
+
+	var nome, resultado, n1,n2,n3, media;
+
+	nome=prompt("Digite o nome do aluno: ");
+	n1=parseFloat(prompt("Digite a nota 1 do aluno: "))
+	n2=parseFloat(prompt("Digite a nota 2 do aluno: "))
+	n3=parseFloat(prompt("Digite a nota 3 do aluno: "))
+
+	media=(n1+n2+n3)/3;
+	media=media.toFixed(2);
+
+	if (media<=5)
+	{
+		resultado="reprovado";
+	}
+	else
+	{
+		if(media>5 && media <7)
+		{
+			resultado="de exame";
+		}
+		else
+		{
+			resultado="aprovado"
+		}
+	}
+
+	alert(nome +"\nteve media "+media+" e esta "+resultado);
+</script>

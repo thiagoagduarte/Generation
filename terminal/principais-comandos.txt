@@ -1,0 +1,17 @@
+pwd - mostra onde estamos
+ls - lista os arquivos da pasta atual
+touch - cria arquivos
+help - ajuda
+cd - trocar de diretório (change directory)
+cd .. - voltar uma pasta
+cd / - vai para o diretório raiz
+vim - editor de texto [I - escrever, ESC - sair, :w salvar e :q fechar]
+clear ou clr - limpar a tela
+cat - mostra o conteúdo do arquivo
+rmdir - exclui a pasta
+mkdir - cria pasta
+cp - copiar arquivo
+exit - sair do terminal
+rm - exclui arquivo
+mv - mover arquivo
+ctrl c - Interrompe processamentos

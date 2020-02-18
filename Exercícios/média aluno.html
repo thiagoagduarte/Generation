@@ -1,0 +1,25 @@
+<script>
+	var media, n1,n2,n3, media, resultado;
+
+	nome=prompt("Digite o nome do aluno: ");
+	n1=prompt("Digite a nota 1");
+	n1=parseFloat(n1);
+	n2=prompt("Digite a nota 2");
+	n2=parseFloat(n2);
+	n3=prompt("Digite a nota 3");
+	n3=parseFloat(n3);
+	
+	media=(n1+n2+n3)/3;
+	media=media.toFixed(2);
+
+	if (media>=7)
+	{
+		resultado="Aprovado";
+	}
+	else
+	{
+		resultado="Reprovado";
+	}
+
+	alert(nome+"\nteve a média "+media+" e foi "+resultado);
+</script>
