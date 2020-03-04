@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        try{
+        // criando nosso modelo
+        // cria o método construtor = constrói o modelo
+        // modelo = conjunto de atributos e métodos
+        // todo modelo começa com letra maiúscula
+        
+        //início do método construtor
+        function Carro(_marca,_anodefabricacao,_velmax,_velatual)
+        {
+            //atributos
+            this.marca = _marca
+            this.anodefabricacao = _anodefabricacao
+            this.velmax= _velmax
+            this.velatual= _velatual
+            // fim dos atributos
+        }
+        //fim do método construtor
+        // início do método acelerar
+        Carro.prototype.acelerar = function()
+        {
+            if (this.velmax>this.velatual)
+            {
+                this.velatual=this.velatual+1
+                alert("velocidade acrescida em 1")
+            }
+            else
+            {
+                alert("O carro está na velocidade máxima")
+            }
+        }
+        // fim do método acelerar
+        // início do método desacelerar
+        Carro.prototype.desacelerar = function()
+        {
+            if (this.velatual>0)
+            {
+                this.velatual=this.velatual-1
+                alert("velocidade decrescida em 1")
+            }
+            else
+            {
+                alert("O carro já está parado")
+            }
+        }
+        // fim do método desacelerar
+        // instanciar = cópia do objeto
+        carro1= new Carro("Audi",2020,10,0)
+        
+        //utilizando o método acelerar() no objeto caneta2
+        carro1.acelerar()
+        carro1.acelerar()
+        carro1.acelerar()
+        carro1.acelerar()
+        carro1.acelerar()
+        carro1.acelerar()
+        carro1.acelerar()
+        carro1.acelerar()
+        carro1.acelerar()
+        carro1.acelerar()
+        carro1.acelerar()
+        carro1.desacelerar()
+        carro1.desacelerar()
+        carro1.desacelerar()
+        carro1.desacelerar()
+        carro1.desacelerar()
+        carro1.desacelerar()
+        carro1.desacelerar()
+        carro1.desacelerar()
+        carro1.desacelerar()
+        carro1.desacelerar()
+        carro1.desacelerar()
+        alert("A velocidade atual do carro é: "+carro1.velatual)
+        }
+        catch (erro)
+        {
+            alert("O programa não está funcionando: "+erro)
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    try
+    {
+    <input type="text" id="nome">
+    <input type="button" value="Clique aqui" id="botao">
+    <script>
+        var nome // variavel global
+        document.getElementById("botao").addEventListener("click", function()
+        {
+            nome=document.getElementById("nome").value
+            alert(nome)
+            
+        })
+        document.getElementById("botao").addEventListener("mouseover", function()
+        {
+            document.getElementById("nome").style.color="red"
+        })
+        debugger //marca um breakpointer no console
+        document.getElementById("botao").addEventListener("mouseout", function()
+        {
+            
+            document.getElementById("nome").style.color="black"
+        })
+        }
+        catch(erro)
+    </script>
+</body>
+</html>
