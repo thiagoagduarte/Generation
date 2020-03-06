@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas - exemplo1</title>
+    <style>
+        #quadro {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="300" height="200" id="quadro"></canvas>
+    <Script>
+        // desenhando uma linha no canvas
+        var canvas = document.getElementById("quadro")
+
+        // verificando se o navegador tem suporte
+        if (canvas.getContext) {
+            var contexto = canvas.getContext("2d")
+        }
+        else{
+            alert("Elemento não é Suportado pelo navegador!!!!")
+        }
+        // Estou avisando que  vai Desenhar
+        contexto.beginPath() 
+        contexto.moveTo(50,30)
+        contexto.lineTo(150,100)
+        contexto.strokeStyle ="rgb(0,148,197)"
+        contexto.stroke()
+        contexto.beginPath() 
+        contexto.moveTo(130,100)
+        contexto.lineTo(250,100)
+        contexto.strokeStyle ="red"
+        contexto.stroke()
+
+    </Script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #quadro 
+        {
+            border: 1px solid black;     
+        }
+    </style>
+</head>
+<body>
+    <canvas width="200" height="200" id="quadro"></canvas>
+    <!-- <img src="../AULA0603/assets/Images/cachorrinho-encantador-wallpaper.jpg" style="width: 100%" alt="">  -->
+    <script>
+        var canvas=document.getElementById("quadro")
+        if (canvas.getContext)
+        {
+            var ctx=canvas.getContext("2d")
+            ctx.beginPath()
+            // desenhando o círculo
+            ctx.arc(100,100,40,Math.PI/180*45,Math.PI/180*315,false)
+            ctx.lineTo(100,100)
+            ctx.lineTo(129,129)
+            ctx.fillStyle="yellow"
+            ctx.fill()
+            ctx.stroke()
+        }
+        else
+        {
+            alert("Navegador não suporta o Canvas!")
+        }
+    </script>
+</body>
+</html>
