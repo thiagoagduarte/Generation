@@ -1,0 +1,14 @@
+{
+  "name": "orientacao_objeto",
+  "version": "1.0.0",
+  "description": "Orientação objeto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thiago Duarte",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
+}

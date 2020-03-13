@@ -1,0 +1,24 @@
+não funciona no bash
+utilizar o terminal powershell
+
+
+node_modules\.bin\tsc.cmd --init    cria o arquivo -> tsconfig.json
+node_modules\.bin\tsc.cmd    para executar
+
+
+https://medium.com/@matheusmariano/o-m%C3%ADnimo-que-voc%C3%AA-precisa-saber-sobre-typescript-58d1b418f78b
+
+Passos:
+1)criar a pasta
+2)pelo terminal entrar na pasta criada
+npm init - para criar o package.jscon
+3)instalar o typescript: npm install typescript
+4)observar que a instalação foi local e que foi criada uma pasta node-modules
+5)estando dentro da pasta verificar a versão do typescript: node_modules\.bin\tsc.cmd ts -v 
+esta verificação foi feita pelo terminal powershell
+6)pelo terminal bash: node_modules/.bin/tsc.cmd ts -v
+Version 3.8.3
+7)criar o arquivo .ts
+8)transpilando o arquivo: node_modules/.bin/tsc ex1
+
+
