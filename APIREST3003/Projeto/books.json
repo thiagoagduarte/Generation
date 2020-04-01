@@ -1,0 +1,44 @@
+[
+    {
+        "ISBN": "9876543210",
+        "title": "A vida é bela",
+        "author": "Thiago Duarte",
+        "publish_date": "2014-12-14",
+        "numOfPages": 472
+    },
+    {
+        "ISBN": "0123456890",
+        "title": "Game Of Thrones",
+        "author": "Thiaguinho",
+        "publish_date": "2000-12-14",
+        "numOfPages": 800
+    },
+    {
+        "ISBN": "0123456890",
+        "title": "Game Of Thrones",
+        "author": "Thiaguinho",
+        "publish_date": "2000-12-14",
+        "numOfPages": 800
+    },
+    {
+        "ISBN": "999",
+        "title": "Teste",
+        "author": "teste",
+        "publish_date": "1999-11-09",
+        "numOfPages": 815
+    },
+    {
+        "ISBN": "888",
+        "title": "Teste 2",
+        "author": "teste 2",
+        "publish_date": "2000-11-09",
+        "numOfPages": 816
+    },
+    {
+        "ISBN": "666",
+        "title": "Teste 4",
+        "author": "teste 4",
+        "publish_date": "2000-11-09",
+        "numOfPages": 830
+    }
+]
